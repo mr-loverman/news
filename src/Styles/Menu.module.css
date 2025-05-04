@@ -1,0 +1,65 @@
+.Menu {
+  position: fixed;
+  flex-direction: column;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  background-color: lightgray;
+  top: 0;
+  width: 30vw;
+  left: -30vw;
+  height: 100vh;
+  z-index: 2000;
+  transition: left 0.3s ease-in-out;
+  will-change: left;
+}
+
+.Menu.open {
+  left: 0;
+}
+
+.Menu_resource {
+  top: 200px;
+  width: 100%;
+  transition: top 0.3s ease-in-out;
+  z-index: 1900;
+  position: absolute;
+}
+
+.visible {
+  top: 0;
+  opacity: 1;
+}
+
+.buttons {
+  margin-left: 30px;
+}
+
+.Menu_button_container {
+  display: flex;
+  height: 50px;
+  width: 100%;
+}
+
+.Menu_button {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: lightgray;
+  align-items: center;
+  text-align: left;
+  outline: none;
+  border: none;
+  z-index: 1950;
+}
+
+.Menu_button:hover {
+  background-color: rgb(120, 120, 120);
+}
+
+.Menu_button:active {
+  background-color: rgba(255, 255, 255, 0.856);
+}
+
