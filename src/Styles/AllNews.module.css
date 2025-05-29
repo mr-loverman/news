@@ -1,0 +1,7 @@
+.All_news_cards_container {
+  display: grid;
+  width: 100%;
+  grid-template-rows: repeat(3, 1fr);
+  padding-top: 45px;
+  gap: 20px;
+}

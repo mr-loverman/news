@@ -1,0 +1,15 @@
+.Card_container_home {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  z-index: 5;
+}
+
+.Home_header_top_side {
+  height: 300px;
+}
+
+.Home_header_bottom_side {
+  height: 200px;
+}

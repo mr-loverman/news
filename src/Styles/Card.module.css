@@ -1,0 +1,28 @@
+.Card_container {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  width: 100%;
+  z-index: 5;
+}
+
+.Card_left_side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+
+.Card_right_side {
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: justify;
+  width: 80%;
+}
+
+.Image {
+  width: 200px;
+  height: 150px;
+}

@@ -3,7 +3,7 @@ import styles from '../../Styles/Menu.module.css'
 import { useState } from "react";
 
 
-function Menu({isOpen, onMouseLeave}) {
+function Menu({isOpen, onMouseLeave, onMouseEnter}) {
 
   const [resource, setResource] = useState(true);
 
@@ -14,7 +14,7 @@ function Menu({isOpen, onMouseLeave}) {
   
   return(
     <>
-      <div className={`${styles.Menu} ${isOpen ? styles.open : ''}`} onMouseLeave={onMouseLeave} >
+      <div className={`${styles.Menu} ${isOpen ? styles.open : ''}`} onMouseLeave={onMouseLeave} onMouseEnter={onMouseEnter} >
         <Menu_Button text={"Home"} path={"/"} />
         <Menu_Button text={"All News"} path={"/All-News"}/>
         <Menu_Button text={"About"} path={"/About"}/>
