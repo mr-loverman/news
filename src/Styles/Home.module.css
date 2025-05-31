@@ -1,15 +1,56 @@
-.Card_container_home {
-  display: flex;
-  flex-direction: column;
-  height: 500px;
-  width: 100%;
+.Home_container {
+  padding-top: 80px;
   z-index: 5;
 }
 
+.Header_container_home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  padding-bottom: 50px;
+}
+
 .Home_header_top_side {
-  height: 300px;
+  display: flex;
+  width: 55%;
+  height: 400px;
+}
+
+.Image {
+  height: 100%;
+  width: 100%;
 }
 
 .Home_header_bottom_side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: justify;
+  padding: 15px;
+  width: 55%;
   height: 200px;
+}
+
+.Header_title {
+  font-family: "Roboto", sans-serif;
+}
+
+.Date {
+  font-family: "Roboto", sans-serif;
+  color: darkgray;
+}
+
+.Separator {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+
+.Home_bottom_side {
+  display: grid;
+  width: 100%;
+  grid-template-rows: repeat(3, 1fr);
+  padding-top: 45px;
+  gap: 20px;
 }
